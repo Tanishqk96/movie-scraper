@@ -134,7 +134,6 @@ export default function IMDbScraper() {
             },
           }
         );
-        console.log("Country Codes:", response.data);
         setCountryCodes(response.data);
       } catch (error) {
         console.error("Error fetching country codes:", error);
@@ -158,7 +157,6 @@ export default function IMDbScraper() {
         }
       );
 
-      console.log("Upcoming Releases:", response.data);
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
